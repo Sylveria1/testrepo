@@ -4,6 +4,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -59,6 +60,12 @@ app.use('/cartItems', cartItemRouter); // Cart Item routes
 app.use('/auth', authRouter); // Authentication routes
 app.use('/admin', adminRouter); // Admin routes
 app.use('/init', initRouter); // Initialization route
+
+app.use(cors({
+  origin: 'http://localhost:3000', // Adjust this as needed
+  methods: 'GET, POST, PUT, DELETE',
+  allowedHeaders: 'Content-Type, Authorization'
+}));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

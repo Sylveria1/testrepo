@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const token = localStorage.getItem('token');
-    console.log('Retrieved token:', token); // Confirm token retrieval
+    console.log('Retrieved token from localStorage:', token); // Confirm token retrieval
   
     if (!token) {
       alert('No token found. Please log in.');
