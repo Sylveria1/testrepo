@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        body {
+            background: url('/images/background.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .login-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+        }
+        .login-container h1 {
+            text-align: center;
+        }
+        .footer-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container mt-5">
+            <h1>Admin Login</h1>
+            <form id="loginForm"> <!-- Ensure the form ID matches here -->
+              <div>
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" placeholder="Username or Email" required>
+              </div>
+              <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password" required>
+              </div>
+              <button type="submit">Sign in</button>
+            </form>            
+        </div>
+        <div class="footer-text">
+            <p>EP Admin App</p>
+            <p>An application for the EP Course Assignment</p>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>

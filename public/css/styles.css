@@ -1,0 +1,38 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.bg-image {
+  background-image: url('/images/background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin: auto;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.footer p {
+  margin: 0;
+}
